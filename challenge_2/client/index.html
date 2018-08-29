@@ -1,2 +1,28 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <header>
+            CSV?
+        </header>
+    </head>
+    <body style="background-image:url(https://png.icons8.com/office/1600/import-csv.png); background-repeat: no-repeat; background-size: contain">
+        <form>
+            <textarea id='textarea' rows='30' cols='100'>
 
+            </textarea>
+            <input type='submit' id='submit_btn'>
+        </form>
+
+        <div>
+            <label for="avatar">CSV FILE DROP ZONE:</label>
+            <input type="file"
+                   id="avatar" name="avatar"
+                   accept=".csv" />
+        </div>
+        <div id="csv" style="background-color: white">
+
+        </div>
+        <script src='./app.js'></script>
+    </body>
+</html>
 
