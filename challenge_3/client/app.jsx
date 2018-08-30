@@ -95,13 +95,13 @@ class App extends React.Component {
         this.setState({
             currentPage: ''
         })
-        fetch('http://localhost:8080/').then(function(response){
-            return (response.json());
-        }).then(function(data) {
-            console.log(data);
-        }).catch(function(err) {
-            console.log(err);
-        })
+        // fetch('http://localhost:8080/').then(function(response){
+        //     return (response.json());
+        // }).then(function(data) {
+        //     console.log(data);
+        // }).catch(function(err) {
+        //     console.log(err);
+        // })
     }
 
     render () {
