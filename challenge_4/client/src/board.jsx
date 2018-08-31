@@ -4,15 +4,15 @@ var Board = (props)=> (
     <div>
     <table id="table">
     <tbody>
-    {props.board.map(function(row){
-        return (    <tr>
-            <td className="col1" colindex="0" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col2" colindex="1" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col3" colindex="2" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col4" colindex="3" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col5" colindex="4" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col6" colindex="5" onClick={(e)=>{props.handleColClick(e.target)}}></td>
-            <td className="col7" colindex="6" onClick={(e)=>{props.handleColClick(e.target)}}></td>
+    {props.board.map(function(row, i){
+        return (<tr>
+            <td className="col1" rows={i+1} cols="1" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col2" rows={i+1} cols="2" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col3" rows={i+1} cols="3" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col4" rows={i+1} cols="4" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col5" rows={i+1} cols="5" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col6" rows={i+1} cols="6" onClick={(e)=>{props.handleColClick(e)}}></td>
+            <td className="col7" rows={i+1} cols="7" onClick={(e)=>{props.handleColClick(e)}}></td>
             </tr>)
     })}
     </tbody>
